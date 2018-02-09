@@ -1,0 +1,178 @@
+@import "vars";
+@import "fonts";
+
+html, body {
+  font-family: 'iranyekan', roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $bodyBgColor;
+  color: white;
+}
+body, h1, div, header, ul, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+.vector {
+
+}
+.vector--chicken {
+  width: 260px;
+  height: 213px;
+  position: relative;
+  margin: 70px auto -10px;
+  background-image: url("../imgs/chickens.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: transparent;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.vector--egg {
+  width: 69px;
+  height: 63px;
+  background-image: url("../imgs/egg.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: transparent;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  position: absolute;
+  left: 93px;
+  top: 119px;
+  -moz-animation: 0.3s ease 0s normal none infinite egg;
+  -moz-transform-origin: 50% 100%;
+  -webkit-animation:egg 0.3s infinite ease-in-out;
+  -webkit-transform-origin: 50% 100%;
+  -o-animation: 0.3s ease 0s normal none infinite egg;
+  -o-animation:egg 0.3s infinite ease-in-out;
+  -o-transform-origin: 50% 100%;
+  -ms-animation: 0.3s ease 0s normal none infinite egg;
+  -ms-animation:egg 0.3s infinite ease-in-out;
+  -ms-transform-origin: 50% 100%;
+  animation: 0.3s ease 0s normal none infinite egg;
+  animation:egg 0.3s infinite ease-in-out;
+  transform-origin: 50% 100%;
+}
+@-moz-keyframes egg {
+  0%{-moz-transform:rotate(3deg)}
+  50%{-moz-transform:rotate(1deg)}
+  100%{-moz-transform:rotate(3deg)}
+}
+@-webkit-keyframes egg {
+  0%{-webkit-transform:rotate(3deg)}
+  50%{-webkit-transform:rotate(1deg)}
+  100%{-webkit-transform:rotate(3deg)}
+}
+@-o-keyframes egg {
+  0%{-o-transform:rotate(3deg)}
+  50%{-o-transform:rotate(1deg)}
+  100%{-o-transform:rotate(3deg)}
+}
+@-ms-keyframes egg {
+  0%{-ms-transform:rotate(3deg)}
+  50%{-ms-transform:rotate(1deg)}
+  100%{-ms-transform:rotate(3deg)}
+}
+@keyframes egg {
+  0%{transform:rotate(3deg)}
+  50%{transform:rotate(1deg)}
+  100%{transform:rotate(3deg)}
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 25px 10px 55px 10px;
+  text-align: center;
+}
+.watch {
+  color: #f6f7f9;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 280px;
+}
+.watch--section {
+  background-color: #00c58c;
+  display: flex;
+  flex: 0 0 25%;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 0;
+}
+.watch--section span {
+  flex: 0 0 100%;
+}
+.watch--section span:first-child {
+  letter-spacing: 2px;
+}
+.watch--days {
+  background-color: $daysBgColor;
+  border-radius: 8px 0 0 8px;
+}
+.watch--hours {
+  background-color: $hoursBgColor;
+}
+.watch--minutes {
+  background-color: $minutesBgColor;
+}
+.watch--seconds {
+  background-color: $secondsBgColor;
+  border-radius: 0 8px 8px 0;
+}
+
+footer {
+  margin: 30px 0;
+}
+footer .copyright {
+  font-size: 11px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.social--item {
+
+}
+.social--item--link {
+  display: block;
+  color: white;
+  width: 44px;
+  height: 44px;
+  line-height: 52px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: $socialsBgColor;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+  .vector {
+    margin-top: 40px;
+  }
+  .watch {
+    width: 432px;
+    height: 100px;
+  }
+  .watch--section {
+    padding: 20px 0;
+  }
+}
+

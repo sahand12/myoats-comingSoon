@@ -1,0 +1,20 @@
+$fontsDir: "../fonts";
+@mixin generate_font_face($name, $filename, $weight, $style) {
+  @font-face {
+    font-family: $name;
+    font-style: $style;
+    font-weight: $weight;
+    src: url("#{$fontsDir}/eot/#{$filename}.eot");
+    src: url("#{$fontsDir}/eot/#{$filename}.eot?#iefix") format('embedded-opentype'), /* IE6-8 */
+      url("#{$fontsDir}/woff2/#{$filename}.woff2") format('woff2'), /* FF39+, Chrome36+, Opera24+ */
+      url("#{$fontsDir}/woff/#{$filename}.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Safari5.1+ */
+      url("#{$fontsDir}/ttf/#{$filename}.ttf") format('truetype');
+  }
+}
+
+@include generate_font_face('iranyekan', 'iranyekanwebbold', bold, normal);
+@include generate_font_face('iranyekan', 'iranyekanweblight', 300, normal);
+@include generate_font_face('iranyekan', 'iranyekanwebregular', normal, normal);
+@include generate_font_face('roboto', 'robotobold', bold, normal);
+@include generate_font_face('roboto', 'robotlight', 300, normal);
+@include generate_font_face('roboto', 'robotoregular', normal, normal);

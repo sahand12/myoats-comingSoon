@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "iranyekan";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/eot/iranyekanwebbold.eot");
+  src: url("../fonts/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/iranyekanwebbold.woff2") format("woff2"), url("../fonts/woff/iranyekanwebbold.woff") format("woff"), url("../fonts/ttf/iranyekanwebbold.ttf") format("truetype"); }
+@font-face {
+  font-family: "iranyekan";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/eot/iranyekanweblight.eot");
+  src: url("../fonts/eot/iranyekanweblight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/iranyekanweblight.woff2") format("woff2"), url("../fonts/woff/iranyekanweblight.woff") format("woff"), url("../fonts/ttf/iranyekanweblight.ttf") format("truetype"); }
+@font-face {
+  font-family: "iranyekan";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/eot/iranyekanwebregular.eot");
+  src: url("../fonts/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/iranyekanwebregular.woff2") format("woff2"), url("../fonts/woff/iranyekanwebregular.woff") format("woff"), url("../fonts/ttf/iranyekanwebregular.ttf") format("truetype"); }
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/eot/robotobold.eot");
+  src: url("../fonts/eot/robotobold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/robotobold.woff2") format("woff2"), url("../fonts/woff/robotobold.woff") format("woff"), url("../fonts/ttf/robotobold.ttf") format("truetype"); }
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/eot/robotlight.eot");
+  src: url("../fonts/eot/robotlight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/robotlight.woff2") format("woff2"), url("../fonts/woff/robotlight.woff") format("woff"), url("../fonts/ttf/robotlight.ttf") format("truetype"); }
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/eot/robotoregular.eot");
+  src: url("../fonts/eot/robotoregular.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/robotoregular.woff2") format("woff2"), url("../fonts/woff/robotoregular.woff") format("woff"), url("../fonts/ttf/robotoregular.ttf") format("truetype"); }
+
+/*# sourceMappingURL=fonts.css.map */

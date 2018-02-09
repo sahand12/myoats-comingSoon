@@ -1,0 +1,322 @@
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/eot/iranyekanwebbold.eot');
+	src: url('../fonts/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/iranyekanwebbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/iranyekanwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/iranyekanwebbold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/eot/iranyekanweblight.eot');
+	src: url('../fonts/eot/iranyekanweblight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/iranyekanweblight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/iranyekanweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/iranyekanweblight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/eot/iranyekanwebregular.eot');
+	src: url('../fonts/eot/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/iranyekanwebregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/iranyekanwebregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/iranyekanwebregular.ttf') format('truetype');
+}
+
+/* Latin fonts (Roboto) */
+
+@font-face {
+	font-family: roboto;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/eot/robotobold.eot');
+	src: url('../fonts/eot/robotobold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/robotobold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/robotobold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/robotobold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: roboto;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/eot/robotolight.eot');
+	src: url('../fonts/eot/robotolight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/robotolight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/robotolight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/robotolight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: roboto;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/eot/robotoregular.eot');
+	src: url('../fonts/eot/robotoregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/robotoregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/robotoregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/robotoregular.ttf') format('truetype');
+}
+
+
+html {
+  font-family: 'iranyekan', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: iranyekan ,roboto ,Arial !important;
+}
+body, h1, div, header, ul, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  background-color: #395A5C;
+  color: white;
+}
+
+.wrapper {
+
+}
+.vector {
+  height: 232px;
+  margin: 20px auto -10px;
+  position: relative;
+  width: 210px;
+}
+.vector--boy {
+  background-image: url('../imgs/boy.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: transparent;
+  background-size: 100%;
+  height: 179px;
+  width: 210px;
+  z-index: 3;
+}
+.vector--mouth {
+  /*animation: mouth 2.4s infinite ease-in-out;*/
+  background-image: url('../imgs/tongue.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: transparent;
+  background-size: 100%;
+  height: 33px;
+  left: 90px;
+  position: absolute;
+  top: 68px;
+  transform-origin: 85% 65%;
+  width: 35px;
+  z-index: 4;
+}
+.vector--plate {
+  background-image: url('../imgs/plate.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: transparent;
+  background-size: 100%;
+  bottom: 0;
+  height: 78px;
+  left: 29px;
+  position: absolute;
+  width: 153px;
+  z-index: 6;
+}
+.vector--food {
+  animation:food 5.0s infinite ease-in-out;
+  background-image: url('../imgs/food.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: transparent;
+  background-size: 100%;
+  height: 178px;
+  left: 44px;
+  position: absolute;
+  top: 16px;
+  transform-origin: 50% 100%;
+  width: 128px;
+  z-index: 5;
+}
+
+@keyframes food {
+  0%{transform: rotate(5deg)}
+  50%{transform: rotate(-5deg)}
+  100%{transform: rotate(5deg)}
+}
+@keyframes mouth {
+  0%{top: 72px}
+  50%{top: 68px}
+  100%{top: 72px}
+}
+@keyframes rotateWords {
+  0% { opacity: 0; }
+  /*2% { opacity: 0; transform: translateY(-20px); }*/
+  2% { opacity: 0;}
+  /*2.5% { opacity: 1; transform: translateY(-1px);}*/
+  2.5% { opacity: 1;}
+  /*12% { opacity: 1; transform: translateY(-1px); }*/
+  12% { opacity: 1;}
+  /*12.5% { opacity: 0; transform: translateY(20px); }*/
+  12.5% { opacity: 0;}
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 25px 10px 55px 10px;
+  text-align: center;
+}
+
+.watch {
+  color: #f6f7f9;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 280px;
+}
+.watch--section {
+  background-color: #00c58c;
+  display: flex;
+  flex: 0 0 25%;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 0;
+}
+.watch--section span {
+  flex: 0 0 100%;
+}
+.watch--section span:first-child {
+  letter-spacing: 2px;
+}
+.watch--days {
+  background-color: #00c58c;
+  border-radius: 8px 0 0 8px;
+}
+.watch--hours {
+  background-color: #00CB9B;
+}
+.watch--minutes {
+  background-color: #00D1A6;
+}
+.watch--seconds {
+  background-color: #37D8B1;
+  border-radius: 0 8px 8px 0;
+}
+
+footer {
+  margin: 30px 0;
+}
+footer .copyright {
+  font-size: 11px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.copyright--icon {
+  display: inline-block;
+  background-image: url("../imgs/heart.png");
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 22px;
+
+}
+.reasons--heart {
+  background-image: url('../imgs/heart.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: transparent;
+  background-size: 100%;
+}
+.reasons {
+  margin: 0;
+  padding: 0;
+}
+.reasons span {
+  line-height: 18px;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  animation: rotateWords 70s linear infinite 0s;
+}
+.reasons span:nth-child(2) {
+  animation-delay: 7s;
+}
+.reasons span:nth-child(3) {
+  animation-delay: 14s;
+}
+.reasons span:nth-child(4) {
+  animation-delay: 21s;
+}
+.reasons span:nth-child(5) {
+  animation-delay: 28s;
+}
+.reasons span:nth-child(6) {
+  animation-delay: 35s;
+}
+.reasons span:nth-child(7) {
+  animation-delay: 42s;
+}
+.reasons span:nth-child(8) {
+  animation-delay: 49s;
+}
+.reasons span:nth-child(9) {
+  animation-delay: 56s;
+}
+.reasons span:nth-child(10) {
+  animation-delay: 63s;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.social--item {
+
+}
+.social--item--link {
+  display: block;
+  color: white;
+  width: 44px;
+  height: 44px;
+  line-height: 50px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #00c58c;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+  .vector {
+    margin-top: 40px;
+  }
+  .watch {
+    width: 432px;
+    height: 100px;
+  }
+  .watch--section {
+    padding: 20px 0;
+  }
+}
